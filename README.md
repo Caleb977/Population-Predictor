@@ -15,8 +15,10 @@ int main(){
     
     Convert = (int) Caculation1;
     
-    puts("The estimated population will be:");
-    printf("%d",Convert);
+   printf("The estimated population will be: %d\n",Convert);
+   // printf("%d",Convert);
+    
+   puts("You are welcome.");
     
     return 0;
 }
