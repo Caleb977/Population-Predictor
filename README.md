@@ -1,2 +1,23 @@
-# Population-Predictor
-he population of a city has risen sharply over the past few years, thanks to a high birth rate. However, this poses a number of problems, including a housing shortage. The mayor has decided to deal with the problem and would like to estimate the future growth of the population, and he has called you in to help!
+#include<stdio.h>
+int main(){
+    int CurrentPopulation;
+    double Percentage;
+    double Caculation1;
+    int Convert;
+    
+    puts("Please enter the current population:");
+    scanf("%d",&CurrentPopulation);
+    
+    puts("Please enter percentage estimate (increae/positive or decrease/negative) in decimal without the percentage sign:");
+    scanf("%lf",&Percentage);
+    
+    Caculation1 = (((Percentage/100)*CurrentPopulation)+(CurrentPopulation));
+    
+    Convert = (int) Caculation1;
+    
+    puts("The estimated population will be:");
+    printf("%d",Convert);
+    
+    return 0;
+}
+
